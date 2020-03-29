@@ -27,7 +27,7 @@ export GIT_AUTH="-Dorg.ajoberstar.grgit.auth.username=daggerok -Dorg.ajoberstar.
 ## advanced
 
 ```bash
-# git add . ; justcommit ; ./gradlew ${GIT_AUTH} reckonTagPush -Preckon.stage=final ; git psom --tags
+# git add . ; justcommit ; ./gradlew ${GIT_AUTH} reckonTagPush -Preckon.stage=final ; git psom --tags ; ./gradlew clran jib
 docker run --rm -it -p 8080:8080 -e GREETING_MESSAGE='привiт!' daggerok/daggerok-jib-gradle-example:`./gradlew -q version`
 ```
 
