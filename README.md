@@ -33,6 +33,7 @@ docker run --rm -it -p 8080:8080 -e GREETING_MESSAGE='привiт!' daggerok/dag
 
 ## resources
 
+* [YouTube: Best Practices to Spring to Kubernetes Easier and Faster by Ray Tsang](https://www.youtube.com/watch?v=c16oOeTfFXM)
 * [Official Gradle documentation](https://docs.gradle.org)
 * [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/gradle-plugin/reference/html/)
 * [Coroutines section of the Spring Framework Documentation](https://docs.spring.io/spring/docs/5.2.5.RELEASE/spring-framework-reference/languages.html#coroutines)

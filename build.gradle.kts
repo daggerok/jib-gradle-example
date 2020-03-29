@@ -96,6 +96,9 @@ jib {
   to {
     image = "daggerok/$group-$name"
   }
+  container {
+    user = "nobody:nogroup" // depends on base image in line 94!
+  }
 }
 
 defaultTasks("clean", "build")
