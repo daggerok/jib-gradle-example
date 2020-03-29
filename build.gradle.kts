@@ -84,7 +84,7 @@ tasks {
       }
     }
   }
-  jib { // reckon jib tags versioning workaroung
+  jib { // reckon version pass in jib tags workaround
     this.to.tags = setOf(project.version.toString())
   }
 }
