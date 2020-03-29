@@ -63,15 +63,6 @@ tasks {
   }
 }
 
-jib {
-  from {
-    image = "openjdk:8u222-slim"
-  }
-  to {
-    image = "daggerok/$group-$name"
-  }
-}
-
 reckon {
   scopeFromProp()
   // stageFromProp()
@@ -94,6 +85,18 @@ tasks {
         }
       }
     }
+  }
+  jib {
+    this.to.tags = setOf(project.version.toString())
+  }
+}
+
+jib {
+  from {
+    image = "openjdk:8u222-slim"
+  }
+  to {
+    image = "daggerok/$group-$name"
   }
 }
 
