@@ -91,7 +91,7 @@ tasks {
 
 jib {
   from {
-    image = "openjdk:8u242-slim-buster"
+    image = "openjdk:8u242-jre"
   }
   to {
     image = "daggerok/$group-$name"
