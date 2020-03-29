@@ -3,11 +3,14 @@ jib gradle plugin
 
 ```bash
 # build and push without docker!
-.gradlew jib
+.gradlew clean jib
 
 # turn on docker and test it!
+docker rmi -f daggerok/daggerok-jib-gradle-example
 docker run --rm -it -p 8080:8080 -e GREETING_MESSAGE='привет!' daggerok/daggerok-jib-gradle-example
+
 http :8080/ololo/trololo
+http :8080/api/
 ```
 
 ## reckon version
@@ -19,6 +22,12 @@ export GIT_PASSWORD=...
 export GIT_AUTH="-Dorg.ajoberstar.grgit.auth.username=daggerok -Dorg.ajoberstar.grgit.auth.password=${GIT_PASSWORD}"
 
 ./gradlew ${GIT_AUTH} reckonTagPush -Preckon.stage=final
+```
+
+## advanced
+
+```bash
+docker run --rm -it -p 8080:8080 -e GREETING_MESSAGE='привет!' daggerok/daggerok-jib-gradle-example`./gradlew -q version`
 ```
 
 ## resources
