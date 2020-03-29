@@ -13,7 +13,7 @@ http :8080/ololo/trololo
 ## reckon version
 
 ```bash
-export GIT_PASSWORD
+export GIT_PASSWORD=...
 export GIT_AUTH="-Dorg.ajoberstar.grgit.auth.username=daggerok -Dorg.ajoberstar.grgit.auth.password=${GIT_PASSWORD}"
 ./gradlew ${GIT_AUTH} reckonTagPush -Preckon.stage=final
 ```
