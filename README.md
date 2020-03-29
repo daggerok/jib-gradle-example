@@ -13,8 +13,11 @@ http :8080/ololo/trololo
 ## reckon version
 
 ```bash
+change git remote to: "git@github.com:daggerok/jib-gradle-example.git", or
+
 export GIT_PASSWORD=...
 export GIT_AUTH="-Dorg.ajoberstar.grgit.auth.username=daggerok -Dorg.ajoberstar.grgit.auth.password=${GIT_PASSWORD}"
+
 ./gradlew ${GIT_AUTH} reckonTagPush -Preckon.stage=final
 ```
 
