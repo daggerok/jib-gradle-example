@@ -10,6 +10,14 @@ docker run --rm -it -p 8080:8080 -e GREETING_MESSAGE='привет!' daggerok/da
 http :8080/ololo/trololo
 ```
 
+## reckon version
+
+```bash
+export GIT_PASSWORD
+export GIT_AUTH="-Dorg.ajoberstar.grgit.auth.username=daggerok -Dorg.ajoberstar.grgit.auth.password=${GIT_PASSWORD}"
+./gradlew ${GIT_AUTH} reckonTagPush -Preckon.stage=final
+```
+
 ## resources
 
 * [Official Gradle documentation](https://docs.gradle.org)
