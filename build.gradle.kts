@@ -2,7 +2,7 @@ plugins {
   kotlin("jvm") version "1.3.71"
   kotlin("plugin.spring") version "1.3.71"
   id("org.ajoberstar.reckon") version "0.12.0"
-  id("com.google.cloud.tools.jib") version "1.7.0"
+  id("com.google.cloud.tools.jib") version "2.1.0"
   id("org.springframework.boot") version "2.2.6.RELEASE"
   id("io.spring.dependency-management") version "1.0.9.RELEASE"
   id("com.github.ben-manes.versions") version  "0.28.0"
